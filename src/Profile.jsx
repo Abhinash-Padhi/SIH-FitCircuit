@@ -5,6 +5,7 @@ import './Profile.css';
 import { Link, useLocation } from 'react-router-dom';
 import ActivityTracker from './components/ActivityTracker';
 import Notifications from './components/Notifications';
+import Navbar from './components/Navbar';
 
 const Profile = () => {
   const location = useLocation();
@@ -22,16 +23,17 @@ const Profile = () => {
   };
 
   return (
-    <div className="profile-container">
+    <>
+    <Navbar />
+      <div className="profile-container">
       <h2>User Profile</h2>
       <div className="profile-content">
         <div className="profile-card">
           <div className="profile-header">
-            <FontAwesomeIcon icon={faUserCircle} className="profile-icon rounded-icon" /> {/* Rounded icon */}
+            <FontAwesomeIcon icon={faUserCircle} className="profile-icon rounded-icon" /> 
             <h3>{userData.username}</h3>
           </div>
           <div className="profile-info">
-            {/* Other info items remain unchanged */}
             <div className="info-item">
               <FontAwesomeIcon icon={faUser} />
               <span><b>First Name:</b> {userData.firstname}</span>
@@ -80,7 +82,8 @@ const Profile = () => {
           <button className="edit-button">Edit Profile</button>
         </Link>
       </div>
-    </div>
+    </div>  
+    </>
   );
 };
 
