@@ -1,7 +1,7 @@
 import React from 'react';
 import './Welcome.css'; 
 
-function FitnessApp() {
+function Welcome() {
   return (
     <div className="container">
       <div className="image-container">
@@ -22,4 +22,4 @@ function FitnessApp() {
   );
 }
 
-export default FitnessApp;
+export default Welcome;
