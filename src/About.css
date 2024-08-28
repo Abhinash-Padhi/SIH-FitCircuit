@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+/* body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    font-size: 16px; 
+} */
+
+.about-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 200vh; 
+    width: 100%; 
+    max-width: 1366px; 
+    margin: 0 auto;
+    box-sizing: border-box; 
+}
+
+.about-background {
+    width: 100%;
+    min-height: 100vh; 
+    background-image: url('./background.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    padding-top: 150px;  
+    box-sizing: border-box; 
+    margin-bottom: 30px;
+    padding-bottom: 120px;
+}
+
+.h1class {
+    font-size: 4rem; 
+    line-height: 2; 
+    padding-left: 45px;
+    color: white;
+    font-family: 'Teko', serif;
+    margin: 0;
+}
+
+.pclass {
+    font-size: 2.5rem; 
+    line-height: 1.6; 
+    margin-bottom: 15px;
+    color: white;
+    padding-left: 45px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin: 0;
+}
+
+@keyframes dropdown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+
+.drop-down-text {
+    opacity: 0; 
+    animation: dropdown 1s ease-out forwards; 
+    animation-delay: 0.5s; 
+}
+
+.drop-down-text:nth-child(1) {
+    animation-delay: 0.5s; 
+}
+
+.drop-down-text:nth-child(2) {
+    animation-delay: 1s; 
+}
+
+.additional-info-background {
+    width: 100%;
+    padding: 60px 20px; 
+    background-color: #f0f0f0; 
+    text-align: center; 
+    padding-top: 120px;
+    padding-bottom: 120px;
+    box-sizing: border-box; 
+    margin-top: 80px;
+    margin-bottom: 80px;
+    border-radius: 15px;
+}
+
+.additional-info-title {
+    font-size: 2.5rem; 
+    margin-bottom: 20px; 
+    color: #333; 
+    font-family: 'Teko', sans-serif;
+    margin: 0;
+}
+
+.additional-info-text {
+    font-size: 1.2rem; 
+    line-height: 1.6; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    color: #555; 
+    font-family: 'Trebuchet MS', sans-serif;
+    margin-bottom: 20px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s ease-out, transform 2s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .about-background{
+        padding-top: 150px;
+    }
+    .h1class {
+        font-size: 3rem; 
+        padding-left: 30px;
+    }
+
+    .pclass {
+        font-size: 2rem; 
+        padding-left: 30px;
+    }
+
+    .additional-info-title {
+        font-size: 2rem;
+    }
+
+    .additional-info-text {
+        font-size: 1rem;
+    }
+
+    .about-background, .additional-info-background {
+        padding: 60px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-background{
+        padding-top: 110px;
+    }
+    .h1class {
+        font-size: 2.5rem; 
+        padding-left: 20px;
+        padding-top: 130px;
+    }
+
+    .pclass {
+        font-size: 1.5rem; 
+        padding-left: 20px;
+    }
+
+    .additional-info-title {
+        font-size: 1.8rem;
+    }
+
+    .additional-info-text {
+        font-size: 0.9rem;
+    }
+
+    .about-background, .additional-info-background {
+        padding: 40px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .h1class {
+        font-size: 2rem; 
+        padding-left: 15px;
+        padding-top: 100px;
+    }
+    
+    .pclass {
+        font-size: 1.2rem; 
+        padding-left: 15px;
+    }
+
+    .additional-info-title {
+        font-size: 1.5rem;
+    }
+
+    .additional-info-text {
+        font-size: 0.8rem;
+    }
+    .about-background, .additional-info-background {
+        padding: 30px 10px;
+    }
+}
