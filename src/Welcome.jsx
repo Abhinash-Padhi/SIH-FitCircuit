@@ -1,12 +1,12 @@
 import React from 'react';
 import './Welcome.css';
-import portrait from './images/portrait.jpg'
+import potrait from './images/portrait.jpg'
 
 function Welcome() {
   return (
     <div className="welcome-container">
       <div className="image-container">
-        <img id="fitness-image" src={portrait} alt="Fitness" />
+        <img id="fitness-image" src={potrait} alt="Fitness" />
       </div>
       <div className="text-overlay">
         <h1>Welcome to FitCircuit!</h1>
