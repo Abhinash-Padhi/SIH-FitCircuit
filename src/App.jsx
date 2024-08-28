@@ -21,6 +21,7 @@ function App() {
         <Route path="/socials" element={<Socials />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/createprofile" element={<CreateProfile />} />
+         <Route path="/welcome" element={<Welcome />} />
       </Routes>
     </Router>
   );
