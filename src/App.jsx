@@ -8,7 +8,7 @@ import Home from './Home'
 import About from './About'
 import Socials from './Socials'
 import Contact from './Contact'
-
+import Welcome from './Welcome'
 function App() {
   return (
     <Router>
