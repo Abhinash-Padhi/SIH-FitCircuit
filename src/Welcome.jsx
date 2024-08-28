@@ -4,7 +4,7 @@ import portrait from './images/portrait.jpg'
 
 function Welcome() {
   return (
-    <div className="container">
+    <div className="welcome-container">
       <div className="image-container">
         <img id="fitness-image" src={portrait} alt="Fitness" />
       </div>
