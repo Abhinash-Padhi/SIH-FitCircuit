@@ -1,1 +1,161 @@
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.image-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#fitness-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); 
+    border-radius: 10px;
+    box-sizing: border-box; 
+    max-width: 90%;
+    overflow: hidden; 
+}
+
+/* Prevent text overflow */
+.text-overlay h1 {
+    font-size: 3em; 
+    margin-bottom: 15px;
+    word-wrap: break-word; 
+}
+
+.text-overlay p {
+    font-size: 2.4em;
+    margin-bottom: 15px;
+    word-wrap: break-word;
+}
+
+.text-overlay ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.text-overlay li {
+    margin: 15px 0;
+    font-size: 2em;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+
+/* Button Styles */
+.get-started-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-top: 20px; 
+}
+
+.get-started-button:hover {
+    background-color: darkgreen;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .text-overlay {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .text-overlay h1 {
+        font-size: 2em; 
+    }
+
+    .text-overlay p {
+        font-size: 1.2em;
+    }
+
+    .text-overlay li {
+        margin: 10px 0;
+        font-size: 1.2em;
+         
+    }
+
+    .get-started-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .text-overlay {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .text-overlay h1 {
+        font-size: 1.7em;
+    }
+
+    .text-overlay p {
+        font-size: 1em;
+    }
+
+    .text-overlay li {
+        margin: 10px 0;
+        font-size: 1em; 
+    }
+
+    .get-started-button {
+        padding: 6px 12px;
+        font-size: 12px;
+        margin-top: 15px;
+    }
+}
+
+/* For very small devices */
+@media (max-width: 400px) {
+    .text-overlay {
+        width: 95%;
+        padding: 8px;
+    }
+
+    .text-overlay h1 {
+        font-size: 1.4em; 
+    }
+
+    .text-overlay p {
+        font-size: 0.9em;
+    }
+
+    .text-overlay li {
+        margin: 8px 0; 
+        font-size: 0.9em;
+        /* Adjust margin for list items */
+    }
+
+    .get-started-button {
+        padding: 5px 10px;
+        font-size: 10px;
+        margin-top: 10px; 
+    }
+}
 
