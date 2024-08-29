@@ -1,12 +1,13 @@
 import React from 'react';
 import './Welcome.css';
-import potrait from './images/portrait.jpg'
+import portrait from './images/portrait.jpg'
+import { Link } from 'react-router-dom';
 
 function Welcome() {
   return (
     <div className="welcome-container">
       <div className="image-container">
-        <img id="fitness-image" src={potrait} alt="Fitness" />
+        <img id="fitness-image" src={portrait} alt="Fitness" />
       </div>
       <div className="text-overlay">
         <h1>Welcome to FitCircuit!</h1>
@@ -17,7 +18,7 @@ function Welcome() {
           <li>Improve Sleep Quality</li>
           <li>Increase Physical Activity</li>
         </ul>
-        <button className="get-started-button">Get Started</button>
+        <Link to="/signup" className="get-started-button">Get Started</Link>
       </div>
     </div>
   );

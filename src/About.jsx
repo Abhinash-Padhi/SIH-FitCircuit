@@ -1,6 +1,7 @@
 import React from 'react'
-import './AboutUs.css';
-import { useEffect } from 'react'; 
+import './About.css';
+import { useEffect } from 'react';
+import Navbar from './components/Navbar'
 
 const About = () => {
   useEffect(() => {
@@ -27,10 +28,11 @@ const About = () => {
 
   return (
     <div className="about-page">
+      <Navbar/>
 
       <div className="about-background">
-        <h1 class="drop-down-text h1class">About Us</h1>
-        <p class="drop-down-text pclass">
+        <h1 className="drop-down-text h1class">About Us</h1>
+        <p className="drop-down-text pclass">
           Dedicated to enhancing your well-being with <br></br> precise tracking and tailored motivation!
         </p>
       </div>
