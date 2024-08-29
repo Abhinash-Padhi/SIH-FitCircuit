@@ -93,7 +93,7 @@ body {
     padding: 0;
 }
 
-.home-button {
+.second-cont button {
     border: none;
     display: grid;
     grid-template-columns: 85% 15%;
@@ -205,7 +205,7 @@ body {
         margin-top: 20px;
     }
 
-    .home img {
+    .inner-cont img {
         margin-top: 2%;
     }
     .second-cont{
