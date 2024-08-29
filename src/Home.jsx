@@ -1,9 +1,16 @@
 import React from "react";
-import "./home.css";
+import "./Home.css";
+import Background from "./images/Background-Video.mp4"
+import workout from "./images/Workout.png"
+import gym from "./images/Gym.jpg"
+import videothumb from "./images/VideoThumb.jpg"
+import food from "./images/Food.png"
+import Navbar from "./components/Navbar"
 
 function Home() {
   return (
     <div className="grid-container">
+      <Navbar/>
       <video
         autoPlay
         loop
@@ -11,7 +18,7 @@ function Home() {
         playsInline
         className="background-clip"
       >
-        <source src="BackGround-Video.mp4" type="video/mp4" />
+        <source src={Background} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div id="fitness-cont">
@@ -19,9 +26,6 @@ function Home() {
       </div>
       <div id="tracker-cont">
         <p id="tracker">T R A C K E R</p>
-      </div>
-      <div id="para">
-        <p></p>
       </div>
       <div className="second-cont">
         <div className="box1">
@@ -39,7 +43,7 @@ function Home() {
               id="food"
               height="240px"
               width="240px"
-              src="Food.png"
+              src={food}
               alt=""
             />
           </button>
@@ -54,7 +58,7 @@ function Home() {
             <h2 className="head3">Plan your Workout</h2>
             <p></p>
             <img
-              src="Workout.png"
+              src={workout}
               height="205px"
               width="200px"
               id="workout"
@@ -74,7 +78,7 @@ function Home() {
             <h2 className="head3">Find gyms at your nearby locations</h2>
             <p></p>
             <img
-              src="Gym.jpg"
+              src={gym}
               height="205px"
               width="330px"
               id="gym"
@@ -92,7 +96,7 @@ function Home() {
             <h2 className="head3">Do it the right way</h2>
             <p></p>
             <img
-              src="VideoThumb.jpg"
+              src={videothumb}
               height="208px"
               width="330px"
               id="videothumb"
