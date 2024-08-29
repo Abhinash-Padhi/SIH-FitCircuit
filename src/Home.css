@@ -218,7 +218,7 @@ body {
     .grid-container{
         width: 480px;
         height: auto;
-        background-image: url('BackGround-Img.jpg');
+        background-image: url('./images/Bg1.jpg');
         align-items: center;
     }
 }
