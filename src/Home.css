@@ -1,0 +1,224 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.grid-container {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100vw;
+    height: 98vh;
+    display: grid;
+    grid-template-rows: 40vh 10vh 50vh;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.background-clip {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+}
+
+
+@media (max-aspect-ratio: 16/9) {
+    .background-clip {
+        width: auto;
+        height: 100%;
+    }
+}
+
+/* Header Styles */
+#fitness {
+    color: rgba(91, 229, 16, 0.956);
+    font-size: 5vw;
+    font-weight: 800;
+    font-family: fantasy;
+}
+
+#fitness-cont {
+    padding-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#tracker-cont {
+    margin-top: 2vh;
+    text-align: center;
+}
+
+#tracker {
+    color: white;
+    font-size: 7vw;
+    font-weight: 800;
+    font-family: fantasy;
+}
+
+#para {
+    margin-top: 2vh;
+    height: auto;
+    width: 90%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Content Buttons */
+.second-cont {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, black, rgb(0, 0, 53), rgb(0, 0, 17));
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items in column */
+}
+
+.box1, .box2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin: 0;
+    padding: 0;
+}
+
+.home-button {
+    border: none;
+    display: grid;
+    grid-template-columns: 85% 15%;
+    grid-template-rows: 30% 20% 45%;
+    border-radius: 50px;
+    overflow: hidden;
+    transition: width 1s,height 0.1s;
+}
+#inner-cont1:hover{
+    width: 480px;
+    width: 450px;
+}
+#inner-cont2:hover{
+    width: 480px;
+    width: 450px;
+}
+#inner-cont3:hover{
+    width: 480px;
+    width: 450px;
+}
+#inner-cont4:hover{
+    width: 480px;
+    width: 450px;
+}
+
+#inner-cont1, #inner-cont2, #inner-cont3, #inner-cont4 {
+    height: 450px;
+    width: 420px;
+    max-width: 450px;
+    background: linear-gradient(120deg, rgb(2, 62, 62), rgb(5, 138, 138), rgb(2, 62, 62)); /* Default background */
+    margin: 20px;
+    cursor: pointer;
+}
+
+#inner-cont1 {
+    
+    background: linear-gradient(120deg, rgb(2, 62, 62), rgb(5, 138, 138), rgb(2, 62, 62));
+}
+
+#inner-cont2 {
+    background: linear-gradient(120deg, rgb(133, 193, 193), rgb(50, 123, 123), rgb(46, 145, 145));
+}
+
+#inner-cont3 {
+    background: linear-gradient(120deg, rgb(69, 155, 155), rgb(30, 102, 102), rgb(13, 61, 61));
+}
+
+#inner-cont4 {
+    background: linear-gradient(120deg, rgba(107, 30, 231, 0.759), rgba(66, 4, 165, 0.759), rgba(42, 3, 106, 0.759));
+}
+
+.head1 {
+    margin-left: 2%;
+    margin-top: 10.5%;
+    font-size: 50px;
+    font-weight: 800;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.head3{
+    margin-left: 2x;
+    color: white;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.material-symbols-outlined{
+    font-size: 50px;
+    margin-right: 20px;
+}
+#food{
+    margin-left: 15%;
+}
+#workout{
+    margin-left: 28%;
+}
+#gym{
+    margin-left: 9.5%;
+}
+#videothumb{
+    margin-left: 9.5%;
+}
+
+
+@media screen and (max-width: 480px) {
+    #fitness {
+        font-size: 8vw;
+        margin-top: 150px;
+    }
+
+    #tracker {
+        font-size: 9vw;
+        margin-bottom: 100px;
+    }
+    
+    .head1 {
+        font-size: 7vw;
+        margin-top: 50px;
+    }
+
+    .head3 {
+        font-size: 5vw;
+        margin-bottom: 150px;
+    }
+
+    #inner-cont1, #inner-cont2, #inner-cont3, #inner-cont4 {
+        max-width: 400px;
+        margin-top: 20px;
+    }
+
+    .home img {
+        margin-top: 2%;
+    }
+    .second-cont{
+        width: 480px;
+        height: auto;
+    }
+    .background-clip{
+        visibility: hidden;
+    }
+    .grid-container{
+        width: 480px;
+        height: auto;
+        background-image: url('BackGround-Img.jpg');
+        align-items: center;
+    }
+}
