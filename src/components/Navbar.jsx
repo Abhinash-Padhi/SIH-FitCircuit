@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faUser, faInfoCircle, faTrophy, faEnvelope, faSignOutAlt, faTimes, faOutdent } from '@fortawesome/free-solid-svg-icons';
-import logo from '../images/Logo.png'
+import logo from '../images/Logo.jpg'
 
 const Navbar = () => {
     const [isNavActive, setIsNavActive] = useState(false);
