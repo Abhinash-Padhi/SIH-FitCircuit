@@ -9,6 +9,7 @@ import About from './About'
 import Socials from './Socials'
 import Contact from './Contact'
 import Welcome from './Welcome'
+import Gyms from './Gyms';
 function App() {
   return (
     <Router>
@@ -21,7 +22,8 @@ function App() {
         <Route path="/socials" element={<Socials />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/createprofile" element={<CreateProfile />} />
-         <Route path="/welcome" element={<Welcome />} />
+        <Route path="/welcome" element={<Welcome />} />
+        <Route path="/gyms" element={<Gyms />} />
       </Routes>
     </Router>
   );

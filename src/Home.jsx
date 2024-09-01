@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Home.css";
 import Background from "./images/Background-Video.mp4"
 import workout from "./images/Workout.png"
@@ -8,6 +9,12 @@ import food from "./images/Food.png"
 import Navbar from "./components/Navbar"
 
 function Home() {
+  
+  const navigate=useNavigate()
+  const goToGym=()=>{
+    navigate("/gyms");
+    window.scrollTo(0, 0);
+  }
   return (
     <div className="grid-container">
       <Navbar/>
@@ -67,7 +74,7 @@ function Home() {
           </button>
         </div>
         <div className="box2">
-          <button id="inner-cont3">
+          <button id="inner-cont3" onClick={goToGym}>
             <p className="head1">Nearby Gyms</p>
             <span
               className="material-symbols-outlined"
@@ -86,7 +93,7 @@ function Home() {
             />
           </button>
           <button id="inner-cont4">
-            <p className="head1">Video Content</p>
+            <p className="head1">Sleep Well</p>
             <span
               className="material-symbols-outlined"
               style={{ fontSize: "48px", marginTop: "45px" }}
