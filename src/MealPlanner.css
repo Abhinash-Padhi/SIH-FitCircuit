@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+.mealplanner-body{
+  font-family: 'Poppins', sans-serif; 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #f0f4f8, #c4e0e5);
+  background: url('./images/mealPlannerBg.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100%;
+}
+
+.meal-planner-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #87CEFA; 
+  color: #000000; 
+  padding-top: 80px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+.meal-planner-title {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.meal-planner-form-group {
+  margin-bottom: 1rem;
+}
+
+.meal-planner-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #555;
+}
+
+.meal-planner-input,
+.meal-planner-select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.meal-planner-input{
+  width: 95%;
+}
+.meal-planner-button {
+  width: 100%;
+  padding: 0.75rem;
+  background: linear-gradient(45deg, #ff6f61, #d93f5f);
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.meal-planner-button:hover {
+  background: linear-gradient(45deg, #d93f5f, #ff6f61);
+  transform: scale(1.05);
+}
+
+.meal-planner-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('./images/mealPlannerBg.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  background-color: #90c7f7;
+  padding-top: 80px;
+}
+
+.meal-planner-popup-content {
+  background: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative; /* Added for positioning the close button */
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.meal-planner-close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.meal-planner-close-btn:hover {
+  color: #ff6f61;
+}
+
+.meal-planner-section-title {
+  margin-top: 0;
+  color: #444;
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.meal-planner-list {
+  list-style: none;
+  padding: 0;
+}
+
+.meal-planner-list-item {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.meal-planner-item-text {
+  margin: 0;
+  color: #666;
+}
+
+/* Keyframes for Popup Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 768px) {
+  .meal-planner-input{
+    width: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  .meal-planner-input{
+    width: 90%;
+  }
+}

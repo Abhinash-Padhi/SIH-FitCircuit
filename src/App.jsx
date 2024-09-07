@@ -10,6 +10,7 @@ import Socials from './Socials'
 import Contact from './Contact'
 import Welcome from './Welcome'
 import Gyms from './Gyms';
+import MealPlanner from './MealPlanner';
 function App() {
   return (
     <Router>
@@ -24,6 +25,7 @@ function App() {
         <Route path="/createprofile" element={<CreateProfile />} />
         <Route path="/welcome" element={<Welcome />} />
         <Route path="/gyms" element={<Gyms />} />
+        <Route path="/mealplanner" element={<MealPlanner/>}/>
       </Routes>
     </Router>
   );
