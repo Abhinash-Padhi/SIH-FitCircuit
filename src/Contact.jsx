@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Navbar from './components/Navbar'
 import './Contact.css';
+import Footer from './components/Footer'
 
 function Contact() {
   useEffect(() => {
@@ -87,6 +88,7 @@ function Contact() {
         </div>
       </div>
     </section>
+    {/* <Footer/> */}
     </>
   );
 }

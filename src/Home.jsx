@@ -4,7 +4,8 @@ import "./Home.css";
 import Background from "./images/Background-Video.mp4"
 import workout from "./images/Workout.png"
 import gym from "./images/Gym.jpg"
-import videothumb from "./images/VideoThumb.jpg"
+import Footer from './components/Footer';
+import videothumb from "./images/sleep-better.jpeg"
 import food from "./images/Food.png"
 import Navbar from "./components/Navbar"
 
@@ -13,6 +14,14 @@ function Home() {
   const navigate=useNavigate()
   const goToGym=()=>{
     navigate("/gyms");
+    window.scrollTo(0, 0);
+  }
+  const goToMeal=()=>{
+    navigate("/mealplanner");
+    window.scrollTo(0, 0);
+  }
+  const goToSleep=()=>{
+    navigate("/sleeptracker");
     window.scrollTo(0, 0);
   }
   return (
@@ -36,7 +45,7 @@ function Home() {
       </div>
       <div className="second-cont">
         <div className="box1">
-          <button id="inner-cont1">
+          <button id="inner-cont1" onClick={goToMeal}>
             <p className="head1">Diet Planner</p>
             <span
               className="material-symbols-outlined"
@@ -92,7 +101,7 @@ function Home() {
               alt=""
             />
           </button>
-          <button id="inner-cont4">
+          <button id="inner-cont4" onClick={goToSleep}>
             <p className="head1">Sleep Well</p>
             <span
               className="material-symbols-outlined"
@@ -112,6 +121,7 @@ function Home() {
           </button>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }

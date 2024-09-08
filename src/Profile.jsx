@@ -6,6 +6,7 @@ import { Link, useLocation } from 'react-router-dom';
 import ActivityTracker from './components/ActivityTracker';
 import Notifications from './components/Notifications';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer'
 
 const Profile = () => {
   const location = useLocation();
@@ -83,6 +84,7 @@ const Profile = () => {
         </Link>
       </div>
     </div>  
+    <Footer/>
     </>
   );
 };

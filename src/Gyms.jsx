@@ -2,6 +2,7 @@ import React from 'react'
 import GeolocationComponent from './components/GeolocationComponent'
 import Navigation from './components/Navigation'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 const Gyms = () => {
   return (
@@ -11,6 +12,7 @@ const Gyms = () => {
       <GeolocationComponent/>
       <Navigation/>
     </div>
+    <Footer/>
     </>
   )
 }

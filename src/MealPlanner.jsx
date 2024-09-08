@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './MealPlanner.css'; // Import custom CSS for styling
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 const MealPlanner = () => {
   const [userData, setUserData] = useState({
@@ -217,8 +219,10 @@ const MealPlanner = () => {
   const closePopup = () => setShowPopup(false);
 
   return (
-    <div className="meal-planner-container">
-      <h1 className="meal-planner-title">Meal Planner</h1>
+    <>
+      <Navbar/>
+      <div className="meal-planner-container">
+      <h1 className="meal-planner-title">Diet Planner</h1>
       <div className="meal-planner-form-group">
         <label htmlFor="weight" className="meal-planner-label">Weight (kg):</label>
         <input type="number" id="weight" name="weight" className="meal-planner-input" value={userData.weight} onChange={handleChange} />
@@ -247,7 +251,7 @@ const MealPlanner = () => {
           <option value="nonVegetarian">Non-Vegetarian</option>
         </select>
       </div>
-      <button className="meal-planner-button" onClick={generateMealPlan}>Generate Meal Plan</button>
+      <button className="meal-planner-button" onClick={generateMealPlan}>Generate Diet Plan</button>
 
       {showPopup && (
         <div className="meal-planner-popup">
@@ -308,6 +312,8 @@ const MealPlanner = () => {
         </div>
       )}
     </div>
+    <Footer/>
+    </>
   );
 };
 

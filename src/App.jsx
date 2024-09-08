@@ -6,26 +6,26 @@ import Profile from './Profile';
 import CreateProfile from './CreateProfile';
 import Home from './Home'
 import About from './About'
-import Socials from './Socials'
 import Contact from './Contact'
 import Welcome from './Welcome'
 import Gyms from './Gyms';
 import MealPlanner from './MealPlanner';
+import SleepTracker from './SleepTracker';
 function App() {
   return (
     <Router>
       <Routes>
+        <Route path="/" element={<Welcome />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/signin" element={<Signin />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/socials" element={<Socials />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/createprofile" element={<CreateProfile />} />
-        <Route path="/welcome" element={<Welcome />} />
         <Route path="/gyms" element={<Gyms />} />
         <Route path="/mealplanner" element={<MealPlanner/>}/>
+        <Route path="/sleeptracker" element={<SleepTracker/>}/>
       </Routes>
     </Router>
   );

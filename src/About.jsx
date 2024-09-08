@@ -2,6 +2,7 @@ import React from 'react'
 import './About.css';
 import { useEffect } from 'react';
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 const About = () => {
   useEffect(() => {
@@ -45,6 +46,7 @@ const About = () => {
         meal plans, and valuable insights into health, nutrition, and fitness.
         </p>
       </div>
+      <Footer/>
     </div>
   );
 };
