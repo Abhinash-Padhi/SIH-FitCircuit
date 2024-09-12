@@ -93,9 +93,7 @@ const SleepTracker = () => {
               <h2>Weekly Sleep Hours</h2>
               <h4>Here is your week overview</h4>
               <h4>You are doing great!</h4>
-              <div className="weekly-box">
-                <img src={graph} alt="Weekly Sleep Graph" />
-              </div>
+              <img src={graph} alt="Weekly Sleep Graph" />
             </section>
           </div>
 
