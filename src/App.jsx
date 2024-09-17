@@ -11,6 +11,7 @@ import Welcome from './Welcome'
 import Gyms from './Gyms';
 import MealPlanner from './MealPlanner';
 import SleepTracker from './SleepTracker';
+import FitnessCalculator from './components/FitnessCalculator';
 function App() {
   return (
     <Router>
@@ -26,6 +27,7 @@ function App() {
         <Route path="/gyms" element={<Gyms />} />
         <Route path="/mealplanner" element={<MealPlanner/>}/>
         <Route path="/sleeptracker" element={<SleepTracker/>}/>
+        <Route path="/fitnesscalculator" element={<FitnessCalculator/>}/>
       </Routes>
     </Router>
   );

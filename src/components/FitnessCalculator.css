@@ -1,0 +1,237 @@
+/* styles.css */
+.sihCalc-body {
+          font-family: 'Arial', sans-serif;
+          background: linear-gradient(to right, #ff6f61, #d5a6e0);
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          /* margin-top: 20px; */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+        }
+        
+        .navbar {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          background: #333;
+          color: #fff;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          z-index: 1000;
+        }
+        
+        .navbar nav ul {
+          display: flex;
+          justify-content: center;
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+        }
+        
+        .navbar nav ul li {
+          margin: 0 15px;
+        }
+        
+        .navbar nav ul li a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 1rem;
+          font-weight: bold;
+          padding: 15px 20px;
+          display: block;
+          transition: background 0.3s ease, transform 0.3s ease, color 0.3s ease;
+        }
+        
+        .navbar nav ul li a:hover {
+          background: #555;
+          border-radius: 5px;
+          transform: scale(1.1);
+          color: #ff6f61;
+        }
+        
+        .sihCalc-container {
+          background: #ffffff;
+          padding: 30px;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          border-radius: 20px;
+          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+          width: 400px; /* Increased width */
+          max-width: 100%;
+          text-align: center;
+          position: relative;
+          overflow: hidden;
+          background: linear-gradient(135deg, #ff6f61, #d5a6e0);
+          transform: rotateX(5deg);
+        }
+        
+        .sihCalc-heading {
+          margin-bottom: 20px;
+          font-size: 2.2rem;
+          color: #ffffff;
+          font-weight: bold;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          z-index: 1;
+          position: relative;
+        }
+        
+        .sihCalc-icon {
+          font-size: 80px; /* Icon size */
+          color: #ffffff;
+          margin-bottom: 20px;
+          animation: pulse 1.5s infinite;
+          z-index: 1;
+          position: relative;
+        }
+        
+        @keyframes pulse {
+          0% { transform: scale(1); opacity: 1; }
+          50% { transform: scale(1.1); opacity: 0.7; }
+          100% { transform: scale(1); opacity: 1; }
+        }
+        
+        .sihCalc-label {
+          display: block;
+          margin-bottom: 8px;
+          font-weight: 600;
+          font-size: 1rem;
+          color: #ffffff;
+          text-align: left;
+        }
+        
+        .sihCalc-input {
+          width: 100%;
+          padding: 12px;
+          margin-bottom: 15px;
+          border: 2px solid #d5a6e0;
+          border-radius: 15px;
+          box-sizing: border-box;
+          font-size: 1rem;
+          color: #333;
+          background: #fefefe;
+          transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+        }
+        
+        .sihCalc-input:focus {
+          border-color: #ff6f61;
+          box-shadow: 0 0 10px rgba(255, 111, 97, 0.5);
+          outline: none;
+          transform: scale(1.02);
+        }
+        
+        .sihCalc-button {
+          padding: 12px;
+          background: #ff6f61;
+          color: white;
+          border: none;
+          border-radius: 15px;
+          cursor: pointer;
+          font-size: 1.1rem;
+          width: 100%;
+          box-sizing: border-box;
+          margin-bottom: 15px;
+          transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+          position: relative;
+          overflow: hidden;
+          transform: perspective(1000px);
+        }
+        
+        .sihCalc-button:hover {
+          background: #d5a6e0;
+          transform: translateY(-2px) rotateX(10deg);
+          box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+        }
+        
+        .sihCalc-button::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 300%;
+          height: 300%;
+          background: rgba(255, 255, 255, 0.3);
+          border-radius: 50%;
+          transition: width 0.3s ease, height 0.3s ease;
+          transform: translate(-50%, -50%);
+          z-index: 0;
+        }
+        
+        .sihCalc-button:hover::after {
+          width: 0;
+          height: 0;
+        }
+        
+        .sihCalc-result p {
+          font-size: 1.2rem;
+          margin: 10px 0;
+          color: #333;
+        }
+        
+        .sihCalc-workouts, .sihCalc-history {
+          display: none;
+          margin-top: 20px;
+          text-align: left;
+        }
+        
+        .sihCalc-workouts h2, .sihCalc-history h2 {
+          font-size: 1.5rem;
+          margin-bottom: 10px;
+          color: #ff7e5f;
+        }
+        
+        .sihCalc-workouts ul, .sihCalc-history ul {
+          list-style-type: none;
+          padding: 0;
+        }
+        
+        .sihCalc-workouts li, .sihCalc-history li {
+          background: #f7f7f7;
+          padding: 12px;
+          margin-bottom: 10px;
+          border-radius: 15px;
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .sihCalc-history li {
+          border: 1px solid #e0e0e0;
+        }
+        
+        @media (max-width: 768px) {
+          .sihCalc-heading {
+              font-size: 2rem;
+          }
+        
+          .sihCalc-input, .sihCalc-button {
+              font-size: 1rem;
+              padding: 10px;
+          }
+        
+          .sihCalc-result p {
+              font-size: 1rem;
+          }
+        }
+        
+        @media (max-width: 480px) {
+          .sihCalc-container {
+              padding: 15px;
+              width: 90%;
+          }
+        
+          .sihCalc-heading {
+              font-size: 1.5rem;
+          }
+        
+          .sihCalc-input, .sihCalc-button {
+              font-size: 0.9rem;
+              padding: 8px;
+          }
+        
+          .sihCalc-result p {
+              font-size: 0.9rem;
+          }
+        }
+        
