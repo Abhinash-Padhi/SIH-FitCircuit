@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import videothumb from "./images/sleep-better.jpeg"
 import food from "./images/Food.png"
 import Navbar from "./components/Navbar"
+import WorkoutRoutine from "./WorkoutRoutine"
 
 function Home() {
   
@@ -22,6 +23,10 @@ function Home() {
   }
   const goToSleep=()=>{
     navigate("/sleeptracker");
+    window.scrollTo(0, 0);
+  }
+  const goToWorkoutRoutine=()=>{
+    navigate("/workoutroutine");
     window.scrollTo(0, 0);
   }
   return (
@@ -63,7 +68,7 @@ function Home() {
               alt=""
             />
           </button>
-          <button id="inner-cont2">
+          <button id="inner-cont2" onClick={goToWorkoutRoutine}>
             <p className="head1">Workout Gear</p>
             <span
               className="material-symbols-outlined"

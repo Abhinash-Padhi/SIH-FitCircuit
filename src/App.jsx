@@ -12,6 +12,7 @@ import Gyms from './Gyms';
 import MealPlanner from './MealPlanner';
 import SleepTracker from './SleepTracker';
 import FitnessCalculator from './components/FitnessCalculator';
+import WorkoutRoutine from './WorkoutRoutine';
 function App() {
   return (
     <Router>
@@ -25,6 +26,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/createprofile" element={<CreateProfile />} />
         <Route path="/gyms" element={<Gyms />} />
+        <Route path="/workoutroutine" element={<WorkoutRoutine/>} />
         <Route path="/mealplanner" element={<MealPlanner/>}/>
         <Route path="/sleeptracker" element={<SleepTracker/>}/>
         <Route path="/fitnesscalculator" element={<FitnessCalculator/>}/>

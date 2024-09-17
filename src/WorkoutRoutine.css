@@ -1,0 +1,105 @@
+#new_conta{
+    margin-top: 100px;
+    width: 51vw;
+    margin-left: 280px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#new_conta h1{
+    font-weight: 650;
+    font-size: 40px;
+    margin-top: 20px;
+}
+#new_conta p{
+    margin-top: 30px;
+    font-size: 19px;
+}
+#new_conta h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+#new_conta h3{
+    font-size: 25px;
+    margin-top: 20px;
+}
+#new_conta video{
+    height: 500px;
+    width: 500px;
+    margin: 50px;
+}
+#Main{
+    font-size: 43px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#Second{
+    margin-top: 70px;
+}
+#new_conta img{
+    height: 580px;
+    width: 700px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+#last{
+    margin-bottom: 100px;
+}
+#fitcalc{
+    margin-left: 390px;
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+    width: 200px;
+    height: 50px;
+    background: black;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+#fitcalc:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    animation: border-top-right 2s infinite alternate;
+}
+#new_conta h4{
+    font-size: 22px;
+    margin-left: 355px;
+}
+@keyframes border-top-right{
+    0%{width:0px; height:0px;}
+    25%{width:200px; height:0px;}
+    50%{width:200px; height:48px;}
+    100%{width:200px; height:48px;}
+}
+#fitcalc:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    animation: border-bottom-left 2s infinite alternate;
+}
+@keyframes border-bottom-left{
+    0%{width:0px; height:0px;}
+    50%{width:0px; height:0px;}
+    75%{width:200px; height:0px;}
+    100%{width:200px; height:48px;}
+}
+@keyframes border-bottom-left{
+    0%{width:0px; height:0px; opacity: 0;}
+    50%{width:0px; height:0px; opacity: 0;}
+    50.1%{width:0px; height:0px; opacity: 1;}
+    75%{width:200px; height:0px; opacity: 1;}
+    100%{width:200px; height:48px; opacity: 1;}
+}
