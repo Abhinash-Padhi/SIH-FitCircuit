@@ -283,15 +283,6 @@ const gyms = [
     long: 85.836262
   },
   {
-    title: "Muscle Planet Gym",
-    rating: "4.3(35+)",
-    opens: "5:00 AM",
-    closes: "9:30 PM",
-    phone: 8280082244,
-    lat: 20.287200,
-    long: 85.811751
-  },
-  {
     title: "Shape Up Fitness Studio",
     rating: "4.4(55+)",
     opens: "6:00 AM",

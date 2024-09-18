@@ -9,28 +9,28 @@ const Footer = () => {
           <h4>FitCircuit</h4>
           <ul>
             <li><a href="/">Get Started</a></li>
-            <li><a href="/">Contact Us</a></li>
-            <li><a href="/">Profile</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+            <li><a href="/profile">Profile</a></li>
           </ul>
         </div>
         
         <div className="footer-section">
           <h4>Explore</h4>
           <ul>
-            <li><a href="/">Nearby Gyms</a></li>
-            <li><a href="/">Workout Plans</a></li>
-            <li><a href="/">Diet Plans</a></li>
-            <li><a href="/">Sleep Activity</a></li>
+            <li><a href="/gyms">Nearby Gyms</a></li>
+            <li><a href="/workoutroutine">Workout Plans</a></li>
+            <li><a href="/mealplanner">Diet Plans</a></li>
+            <li><a href="/sleeptracker">Sleep Activity</a></li>
           </ul>
         </div>
 
         <div className="footer-section">
           <h4>More from FitCircuit</h4>
           <ul>
-            <li><a href="/">Our Story</a></li>
-            <li><a href="/">Blog</a></li>
-            <li><a href="/">FAQ's</a></li>
-            <li><a href="/">Sign In</a></li>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">FAQ's</a></li>
+            <li><a href="/signin">Sign In</a></li>
           </ul>
         </div>
 
